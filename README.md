@@ -45,6 +45,12 @@ Kurzfassung:
 5. **Prüfen**: Gibt es Überschneidungen? Bekommt jede Person, was ihr laut Modul zusteht?
 6. **Drucken** oder als PDF speichern – auf Deutsch oder Englisch.
 
+## Neu in Version 2.2
+
+- Dunkle Darstellung: hell, dunkel oder wie Windows – Umschalter (Sonne/Mond) oben rechts.
+- Einstellungen → Darstellung: Akzentfarbe, Schriftgröße (normal / groß / sehr groß), zarte oder kräftige Terminfarben im Planer.
+- Gilt pro Computer; gedruckte Pläne bleiben immer hell.
+
 ## Neu in Version 2.1.1
 
 - Planer mit Teilnehmenden als Spalten: Die Teilnehmenden stehen auch in der Namensliste (unten, eingeklappt). Eine andere Person in eine Spalte ziehen = Termin für beide; in die eigene Spalte ziehen = Termin nur mit dieser Person.

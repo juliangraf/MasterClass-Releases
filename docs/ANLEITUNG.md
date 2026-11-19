@@ -236,6 +236,13 @@ Wochentage, Datum und feste Texte werden automatisch übersetzt. **Ihre eigenen 
 
 ![Einstellungen](bilder/17-einstellungen.png)
 
+- **Darstellung** (gilt nur auf diesem Computer):
+  - **Farbschema:** Hell, Dunkel oder Wie Windows. Schneller geht es mit dem Sonne/Mond-Knopf oben rechts.
+  - **Akzentfarbe** der Oberfläche.
+  - **Schriftgröße:** Normal, Groß oder Sehr groß – z. B. für kleine Laptop-Bildschirme.
+  - **Termine im Planer:** zarte oder kräftige Farben (kräftig ist z. B. auf dem Beamer besser zu unterscheiden).
+
+  Gedruckte Pläne und die Druckvorschau bleiben immer hell.
 - **Veranstaltung:** Name, erster und letzter Tag, sichtbarer Zeitraum im Planer (z. B. 8–22 Uhr), Raster beim Verschieben (z. B. 15 Minuten).
 - **Gestaltung der Pläne:** Logo oben, Überschrift, Akzentfarbe, Bild unten (z. B. Sponsoren) mit Text darüber.
 
