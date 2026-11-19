@@ -45,6 +45,12 @@ Kurzfassung:
 5. **Prüfen**: Gibt es Überschneidungen? Bekommt jede Person, was ihr laut Modul zusteht?
 6. **Drucken** oder als PDF speichern – auf Deutsch oder Englisch.
 
+## Neu in Version 2.1.1
+
+- Planer mit Teilnehmenden als Spalten: Die Teilnehmenden stehen auch in der Namensliste (unten, eingeklappt). Eine andere Person in eine Spalte ziehen = Termin für beide; in die eigene Spalte ziehen = Termin nur mit dieser Person.
+- Gruppen in der Namensliste lassen sich auf- und zuklappen.
+- Mehr Sicherheit bei Updates: Projektdateien älterer Versionen werden automatisch getestet, und Angaben aus neueren Versionen gehen beim Speichern nicht mehr verloren.
+
 ## Neu in Version 2.1
 
 - Seitenleisten lassen sich einklappen – mehr Platz für den Plan.
