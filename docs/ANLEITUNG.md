@@ -198,7 +198,7 @@ Im Bearbeiten-Fenster:
   ![Automatisch mit belegt unter einer Bedingung](bilder/06b-bedingung.png)
 - **Gebuchte Module** – daraus ergibt sich, wie viel Unterricht der Person zusteht.
 - **Sprache des gedruckten Plans** – **English** für Teilnehmende, die kein Deutsch sprechen (siehe [Abschnitt 9](#9-schritt-5-drucken--auch-auf-englisch)). In der Liste steht dann ein kleines „EN“ hinter dem Namen.
-- **Nicht verfügbar** – z. B. spätere Anreise oder früher abreisen. Wird die Person in dieser Zeit eingeplant, meldet MasterClass das.
+- **Nicht verfügbar** – z. B. spätere Anreise oder früher abreisen, mit Grund. Im Planer ist diese Zeit [schraffiert](#7-schritt-3-planen); wird die Person trotzdem eingeplant, meldet MasterClass das.
 
 ## 6. Anmeldeliste aus Excel importieren
 
@@ -239,7 +239,7 @@ Oben wählen Sie den **Tag** und, was die **Spalten** sein sollen – meist Doze
 - In einer Spalte mit der Maus einen Zeitraum **aufziehen** → das Termin-Fenster öffnet sich.
 - Einen **Namen aus der Liste links** in den Plan ziehen → Termin mit Spalte + Person, Dauer wie oben eingestellt (z. B. 45 min).
 - Einen Namen **auf einen vorhandenen Termin** ziehen → die Person wird hinzugefügt.
-- **„+ Termin“** oder **„Termin für alle“** (Mahlzeiten, Konzerte …).
+- **„+ Termin“** oder **„Termin für alle“** (Kalender mit Plus – für Mahlzeiten, Konzerte …).
 
 **Ändern:** Termin anklicken (Fenster öffnet sich), ziehen zum Verschieben (auch in eine andere Spalte), am unteren Rand ziehen für die Dauer.
 
@@ -251,7 +251,18 @@ Im Termin-Fenster sehen Sie sofort, ob es Überschneidungen gibt, und wer **auto
 
 **Rote Termine** überschneiden sich mit einem anderen. Die rote Zahl im Spaltenkopf zeigt, wie viele es in dieser Spalte sind.
 
-**Teilnehmende als Spalten:** Wählen Sie oben „Spalten: Teilnehmende“, steht im Kopf jeder Spalte, was der Person laut Modul **noch fehlt** (z. B. „fehlt: Korrepetition 45′“) oder „✓ alles geplant“. Mit der Maus darauf sehen Sie die Details.
+**Spalte „Für alle“:** Ganz links stehen die Termine, die für alle gelten (Mahlzeiten, Begrüßung, Konzert). In den anderen Spalten sind sie als grün gestreiftes Band zu sehen. Brauchen Sie den Platz, blenden Sie die Spalte mit dem durchgestrichenen Auge im Spaltenkopf aus. Dann stehen Uhrzeit und Titel dieser Termine direkt in den Bändern der anderen Spalten; ein Klick darauf öffnet den Termin. Der grüne Knopf mit der Weltkugel oben links in der Ecke blendet die Spalte wieder ein. MasterClass merkt sich die Einstellung. Neue Termine für alle legen Sie weiterhin mit **„Termin für alle“** an.
+
+![Spalte „Für alle“ ausgeblendet](bilder/08b-fuer-alle-ausgeblendet.png)
+
+**Abwesenheiten:** Ist jemand zeitweise nicht verfügbar (eingetragen bei der Person unter [„Nicht verfügbar“](#5-schritt-2-personen-räume-und-ensembles), z. B. spätere Anreise), sehen Sie das beim Planen sofort:
+
+- In der **Spalte der Person** (bzw. einer Gruppe, zu der sie gehört) ist die Zeit grau schraffiert, mit dem Grund oben im Band. Mit der Maus darauf stehen Uhrzeit und Grund.
+- In der **Namensliste** steht eine durchgestrichene Uhr (orange) bei allen, die an diesem Tag ganz oder teilweise fehlen – bei einer Gruppe auch, wenn ein Mitglied fehlt. Mit der Maus darauf sehen Sie, wer wann fehlt.
+- Klicken Sie einen Namen in der Liste an oder ziehen Sie ihn gerade in den Plan, erscheint seine Abwesenheit **orange in allen Spalten** – so sehen Sie auch in der Dozenten-Ansicht, wann eine Teilnehmerin nicht kann.
+- Wird jemand trotzdem in dieser Zeit eingeplant, meldet MasterClass „Nicht verfügbar!“, und unter „Prüfen“ steht es bei den Abwesenheiten.
+
+**Teilnehmende als Spalten:** Wählen Sie oben „Spalten: Teilnehmende“, steht im Kopf jeder Spalte, was der Person laut Modul **noch fehlt** (z. B. „fehlt: Korrepetition 45′“) oder „✓ alles geplant“. Mit der Maus darauf sehen Sie die Details. Im Bild reist Ben Richter erst mittags an – seine Spalte ist bis 12 Uhr schraffiert.
 
 ![Teilnehmende als Spalten](bilder/08-planer-teilnehmende.png)
 
