@@ -45,35 +45,6 @@ Kurzfassung:
 5. **Prüfen**: Gibt es Überschneidungen? Bekommt jede Person, was ihr laut Modul zusteht?
 6. **Drucken** oder als PDF speichern – auf Deutsch oder Englisch.
 
-## Neu in Version 2.4
-
-- Regeln für die automatische Zuordnung lassen sich beliebig mit „und“/„oder“ verschachteln, z. B. Professorenunterricht = Prof. A oder Prof. B ist dabei und genau 1 Teilnehmer/in; Ensembleunterricht = genau 1 Ensemble. Neu ist auch „… ist nicht dabei“.
-- Ausnahmen bei einzelnen Terminen: feste Unterrichtsart oder „zählt nicht“. Unter „Module“ stehen alle Ausnahmen in einer Liste.
-- Beim Ändern einer Regel zeigt MasterClass vorher, welche Termine, Module und gedruckten Pläne sich dadurch ändern.
-- Das Beispielprojekt zeigt die neuen Regeln und Ausnahmen.
-
-## Neu in Version 2.2
-
-- Dunkle Darstellung: hell, dunkel oder wie Windows – Umschalter (Sonne/Mond) oben rechts.
-- Einstellungen → Darstellung: Akzentfarbe, Schriftgröße (normal / groß / sehr groß), zarte oder kräftige Terminfarben im Planer.
-- Gilt pro Computer; gedruckte Pläne bleiben immer hell.
-
-## Neu in Version 2.1.1
-
-- Planer mit Teilnehmenden als Spalten: Die Teilnehmenden stehen auch in der Namensliste (unten, eingeklappt). Eine andere Person in eine Spalte ziehen = Termin für beide; in die eigene Spalte ziehen = Termin nur mit dieser Person.
-- Gruppen in der Namensliste lassen sich auf- und zuklappen.
-- Mehr Sicherheit bei Updates: Projektdateien älterer Versionen werden automatisch getestet, und Angaben aus neueren Versionen gehen beim Speichern nicht mehr verloren.
-
-## Neu in Version 2.1
-
-- Seitenleisten lassen sich einklappen – mehr Platz für den Plan.
-- Navigation in der Reihenfolge des Arbeitsablaufs: Module → Personen & Räume → Planen → Prüfen → Drucken.
-- Regeln für die automatische Zuordnung von Terminen zu Unterrichtsarten (nach Dozent oder Anzahl der Teilnehmenden).
-- Verständlichere Bezeichnungen „Immer mit dabei“ und „Automatisch dabei bei“ (passen für Ensembles, Räume, Dozenten …).
-- Im Planer mit Teilnehmenden als Spalten steht im Spaltenkopf, was der Person noch fehlt.
-- Pläne auf Englisch (pro Person oder für alle) mit Wörterbuch und Vorschlägen.
-- Besserer Excel-Import für Formular-Anmeldelisten: Filter (z. B. ohne Begleitpersonen), lange Modultexte werden erkannt.
-
 ## Fragen, Fehler, Wünsche
 
 Bitte ein [Issue](https://github.com/juliangraf/MasterClass-Releases/issues) anlegen oder sich direkt bei der Organisation melden.
