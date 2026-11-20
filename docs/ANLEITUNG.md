@@ -88,27 +88,57 @@ Unter **„Andere Schreibweisen in Excel-Listen“** tragen Sie ein, wie das Mod
 
 ### Regeln: Termine automatisch zuordnen
 
-Damit ein Termin für die Module zählt, braucht er eine Unterrichtsart. Statt sie bei jedem Termin von Hand zu wählen, können Sie **Regeln** festlegen. Klicken Sie bei einer Unterrichtsart auf **„+ Regel“**:
+Damit ein Termin für die Module zählt, braucht er eine Unterrichtsart. Statt sie bei jedem Termin von Hand zu wählen, können Sie **Regeln** festlegen. Klicken Sie bei einer Unterrichtsart auf **„+ Regel“** (oder auf eine vorhandene Regel, um sie zu ändern):
 
 ![Regel bearbeiten](bilder/04-regel.png)
 
-Eine Regel hat zwei Bedingungen; was Sie leer lassen, ist egal:
+Eine Regel besteht aus Bedingungen. Es gibt drei Arten:
 
-- **„… einer dieser Einträge dabei ist“** – z. B. die Korrepetitorin. Dann zählt jeder Termin mit ihr als Korrepetition.
-- **„… und die Anzahl stimmt“** – z. B. genau 1 Teilnehmende → Einzelunterricht, ab 2 Teilnehmenden → Gruppenunterricht. Mitglieder eines Ensembles zählen mit: ein Ensemble mit vier Personen sind vier Teilnehmende.
+- **„Dabei ist …“**: einer der ausgewählten Einträge ist beim Termin dabei, z. B. die Korrepetitorin oder einer von zwei Professoren.
+- **„Nicht dabei ist …“**: keiner der ausgewählten Einträge ist dabei.
+- **„Anzahl“**: so viele Einträge einer Kategorie sind dabei, z. B. genau 1 Teilnehmer/in, ab 2 Teilnehmenden oder genau 1 Ensemble. Mitglieder zählen mit: ein Ensemble mit vier Personen sind vier Teilnehmende; das Bassorchester aus zwei Ensembles sind drei Ensembles.
 
-Beispiele für eine typische Einrichtung:
+Oben wählen Sie, wie die Bedingungen verknüpft sind: **„Alle davon (und)“** oder **„Mindestens eine davon (oder)“**. Über **„Bedingung hinzufügen“ → „Gruppe …“** setzen Sie eine Gruppe in die Regel, die selbst wieder „und“ oder „oder“ sein kann – so lässt sich alles beliebig kombinieren. Unter den Bedingungen steht die Regel noch einmal als Satz.
+
+Beispiele für eine typische Einrichtung (so ist auch das Beispielprojekt eingerichtet):
 
 | Unterrichtsart | Regel |
 |---|---|
+| Professorenunterricht | Prof. A **oder** Prof. B ist dabei **und** genau 1 Teilnehmer/in |
 | Korrepetition | Korrepetitorin ist dabei |
-| Meisterkurs | Prof. X ist dabei **und** genau 1 Teilnehmende |
-| Einzelunterricht | genau 1 Teilnehmende |
+| Ensembleunterricht | genau 1 Ensemble |
+| Einzelunterricht | genau 1 Teilnehmer/in |
 | Gruppenunterricht | mindestens 2 Teilnehmende |
 
-**Reihenfolge:** Treffen mehrere Regeln zu, gilt die Unterrichtsart, die weiter oben steht. Mit den kleinen Pfeilen links ändern Sie die Reihenfolge. Im Beispiel oben steht „Korrepetition“ deshalb vor „Einzelunterricht“: eine Teilnehmerin mit der Korrepetitorin ist Korrepetition, kein Einzelunterricht.
+**Reihenfolge:** Treffen mehrere Regeln zu, gilt die Unterrichtsart, die weiter oben steht. Mit den kleinen Pfeilen links ändern Sie die Reihenfolge. Im Beispiel steht „Professorenunterricht“ deshalb vor „Einzelunterricht“: Unterricht bei Prof. A mit einer Person ist Professorenunterricht, Unterricht bei einer anderen Dozentin Einzelunterricht.
 
-**Von Hand hat Vorrang:** Wählen Sie bei einem Termin selbst eine Unterrichtsart, gilt diese. Im Termin steht, welche Unterrichtsart die Regeln ergeben würden („Ohne Auswahl automatisch: …“).
+### Regeln ändern: Was passiert mit den Terminen?
+
+Regeln gelten immer für alle Termine – auch für die schon geplanten. Bevor Sie eine geänderte Regel speichern, zeigt MasterClass deshalb, was sich ändert:
+
+![Vorschau beim Ändern einer Regel](bilder/04b-regel-auswirkung.png)
+
+- welche Termine eine andere Unterrichtsart bekommen (z. B. „Professorenunterricht → Einzelunterricht: 2 Termine“),
+- bei wem sich das Ergebnis der Module ändert (z. B. „erfüllt → fehlt 45 min“),
+- wie viele schon gedruckte Pläne danach neu gedruckt werden müssen.
+
+Termine mit einer **Ausnahme** (siehe unten) ändern sich nicht. Gefällt Ihnen das Ergebnis nicht: „Abbrechen“ – oder nach dem Speichern „Rückgängig“.
+
+Wird eine Person gelöscht, die in einer Regel vorkommt, passt MasterClass die Regel an, ohne ihren Sinn zu verändern. Beispiel: Werden beide Professoren gelöscht, entfällt die Regel „Professorenunterricht“ ganz – sie wird nicht stillschweigend zu „genau 1 Teilnehmer/in“.
+
+### Ausnahmen bei einzelnen Terminen
+
+Manchmal soll ein Termin anders zählen, als die Regeln sagen. Dafür wählen Sie im Termin unter **„Unterrichtsart“**:
+
+- **„Automatisch: …“** – es gelten die Regeln (Standard). Dahinter steht, was die Regeln ergeben.
+- **eine feste Unterrichtsart** – z. B. eine Vertretungsstunde bei einem Professor, die trotzdem als Einzelunterricht zählen soll.
+- **„Zählt nicht (keine Unterrichtsart)“** – z. B. eine Bühnenprobe, die nicht für die Module zählen soll.
+
+Weicht ein Termin von den Regeln ab, steht das in Orange darunter. Unter „Module“ zeigt die Liste **„Ausnahmen bei einzelnen Terminen“** alle diese Termine; ein Klick auf den Namen öffnet den Termin, **„Aufheben“** lässt ihn wieder den Regeln folgen:
+
+![Ausnahmen bei einzelnen Terminen](bilder/18-ausnahmen.png)
+
+Haben Termine von Hand genau die Unterrichtsart, die sich auch aus den Regeln ergibt (häufig nach dem Übernehmen alter Daten), bietet MasterClass dort an, sie **auf automatisch umzustellen**. Dann folgen sie künftigen Regeländerungen.
 
 ## 5. Schritt 2: Personen, Räume und Ensembles
 
@@ -176,7 +206,7 @@ Oben wählen Sie den **Tag** und, was die **Spalten** sein sollen – meist Doze
 
 **Ändern:** Termin anklicken (Fenster öffnet sich), ziehen zum Verschieben (auch in eine andere Spalte), am unteren Rand ziehen für die Dauer.
 
-**Unterrichtsart für neue Termine:** Das Feld oben (neben der Dauer). Gibt es Regeln, steht dort „Automatisch (Regeln)“ – dann entscheiden die Regeln.
+**Unterrichtsart für neue Termine:** Das Feld oben (neben der Dauer). Gibt es Regeln, steht dort „Automatisch (Regeln)“ – dann entscheiden die Regeln. Ausnahmen für einzelne Termine legen Sie im Termin fest (siehe [Ausnahmen](#ausnahmen-bei-einzelnen-terminen)).
 
 ![Termin bearbeiten](bilder/10-termin.png)
 
@@ -268,7 +298,10 @@ Legen Sie die Projektdatei in einen gemeinsamen Cloud-Ordner (OneDrive, Dropbox,
 Das Programm ist nicht digital signiert. „Weitere Informationen“ → „Trotzdem ausführen“.
 
 **Ein Termin zählt nicht für das Modul.**
-Hat der Termin eine Unterrichtsart? Entweder im Termin wählen oder unter „Module“ eine Regel anlegen. „Prüfen“ zeigt Termine ohne Unterrichtsart, an denen Personen mit Modul teilnehmen.
+Hat der Termin eine Unterrichtsart? Entweder im Termin wählen oder unter „Module“ eine Regel anlegen. Steht im Termin „Zählt nicht“, ist er absichtlich ausgenommen. „Prüfen“ zeigt Termine ohne Unterrichtsart, an denen Personen mit Modul teilnehmen.
+
+**Ein Termin zählt als falsche Unterrichtsart.**
+Im Termin unter „Unterrichtsart“ steht, was die Regeln ergeben. Trifft eine weiter oben stehende Regel zu, gewinnt sie – Reihenfolge unter „Module“ ändern oder die Regel genauer fassen. Für einen einzelnen Termin genügt eine Ausnahme (feste Unterrichtsart im Termin).
 
 **Eine Person wird im Ensemble-Termin nicht als belegt erkannt.**
 Ist sie beim Ensemble unter „Immer mit dabei“ (bzw. bei der Person unter „Automatisch dabei bei“) eingetragen?
