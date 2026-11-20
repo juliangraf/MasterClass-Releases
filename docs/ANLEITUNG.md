@@ -98,17 +98,17 @@ Eine Regel besteht aus Bedingungen. Es gibt drei Arten:
 - **„Nicht dabei ist …“**: keiner der ausgewählten Einträge ist dabei.
 - **„Anzahl“**: so viele Einträge einer Kategorie sind dabei, z. B. genau 1 Teilnehmer/in, ab 2 Teilnehmenden oder genau 1 Ensemble. Mitglieder zählen mit: ein Ensemble mit vier Personen sind vier Teilnehmende; das Bassorchester aus zwei Ensembles sind drei Ensembles.
 
-Oben wählen Sie, wie die Bedingungen verknüpft sind: **„Alle davon (und)“** oder **„Mindestens eine davon (oder)“**. Über **„Bedingung hinzufügen“ → „Gruppe …“** setzen Sie eine Gruppe in die Regel, die selbst wieder „und“ oder „oder“ sein kann – so lässt sich alles beliebig kombinieren. Unter den Bedingungen steht die Regel noch einmal als Satz.
+Oben wählen Sie, wie die Bedingungen verknüpft sind: **„Alle davon (und)“** oder **„Mindestens eine davon (oder)“**. Über **„Bedingung hinzufügen“ → „Gruppe …“** setzen Sie eine Gruppe in die Regel, die selbst wieder „und“ oder „oder“ sein kann – so lässt sich alles beliebig kombinieren. Unter den Bedingungen steht die Regel noch einmal als Satz, z. B. „Automatisch „Bassix“, wenn Bassics und Karola Piel dabei sind.“
 
 Beispiele für eine typische Einrichtung (so ist auch das Beispielprojekt eingerichtet):
 
-| Unterrichtsart | Regel |
+| Unterrichtsart | Automatisch, wenn … |
 |---|---|
-| Professorenunterricht | Prof. A **oder** Prof. B ist dabei **und** genau 1 Teilnehmer/in |
-| Korrepetition | Korrepetitorin ist dabei |
-| Ensembleunterricht | genau 1 Ensemble |
-| Einzelunterricht | genau 1 Teilnehmer/in |
-| Gruppenunterricht | mindestens 2 Teilnehmende |
+| Professorenunterricht | Prof. A **oder** Prof. B dabei ist **und** genau 1 Teilnehmer/in dabei ist |
+| Korrepetition | die Korrepetitorin dabei ist |
+| Ensembleunterricht | genau 1 Ensemble dabei ist |
+| Einzelunterricht | genau 1 Teilnehmer/in dabei ist |
+| Gruppenunterricht | mindestens 2 Teilnehmende dabei sind |
 
 **Reihenfolge:** Treffen mehrere Regeln zu, gilt die Unterrichtsart, die weiter oben steht. Mit den kleinen Pfeilen links ändern Sie die Reihenfolge. Im Beispiel steht „Professorenunterricht“ deshalb vor „Einzelunterricht“: Unterricht bei Prof. A mit einer Person ist Professorenunterricht, Unterricht bei einer anderen Dozentin Einzelunterricht.
 
@@ -155,10 +155,14 @@ Links wählen Sie die **Kategorie** (Teilnehmende, Dozenten, Räume, Ensembles �
 
 Im Bearbeiten-Fenster:
 
-- **Immer mit dabei** – Einträge, die automatisch mit eingeplant werden, wenn dieser Eintrag eingeplant wird. Beispiele: die Mitglieder eines Ensembles; der feste Raum einer Dozentin.
-- **Automatisch dabei bei** – die Gegenrichtung: Wird einer dieser Einträge eingeplant, ist dieser Eintrag automatisch dabei. Beispiele: die Ensembles, in denen eine Person spielt; bei einem Raum die Dozentin, deren fester Raum er ist.
+- **Automatisch mit belegt** – hier legen Sie fest, wer mit wem automatisch zusammen eingeplant ist. Das ist *eine* Verknüpfung, die Sie von beiden Seiten aus eintragen können; die Pfeile zeigen die Richtung:
+  - **→ Belegt automatisch mit** – wird *dieser* Eintrag eingeplant, sind die ausgewählten automatisch mit belegt. Beispiele: die Mitglieder eines Ensembles; der feste Raum einer Dozentin.
+  - **← Wird automatisch mit belegt von** – die Gegenrichtung: wird *einer der ausgewählten* eingeplant, ist dieser Eintrag automatisch mit belegt. Beispiele: die Ensembles, in denen eine Person spielt; bei einem Raum die Dozentin, deren fester Raum er ist.
 
-  Plant man also das „Ensemble Toffifee“ ein, sind alle Mitglieder automatisch belegt – und eine Überschneidung mit dem Einzelunterricht eines Mitglieds wird erkannt. Die Bezeichnungen können Sie je Kategorie ändern (z. B. „Mitglieder“ statt „Immer mit dabei“).
+  Beides ist dasselbe, nur von der anderen Seite gesehen: Tragen Sie beim Ensemble unter „Belegt automatisch mit“ Lisa ein, steht bei Lisa das Ensemble unter „Wird automatisch mit belegt von“. Plant man also das „Ensemble Toffifee“ ein, sind alle Mitglieder automatisch belegt – und eine Überschneidung mit dem Einzelunterricht eines Mitglieds wird erkannt. Die Bezeichnungen können Sie je Kategorie ändern (z. B. „Mitglieder“ statt „Belegt automatisch mit“).
+  - **… oder unter einer Bedingung (und/oder)** – für Fälle, in denen ein einzelner Eintrag nicht genügt. Über **„Bedingung festlegen …“** öffnet sich derselbe Editor wie bei den [Regeln der Unterrichtsarten](#regeln-termine-automatisch-zuordnen). Beispiele: Der Pianoraum ist nur dann automatisch belegt, wenn Ensemble A **und** Dozentin B beide eingeplant sind; die Korrepetitorin kommt automatisch dazu, wenn mindestens 5 Teilnehmende dabei sind. So müssen Sie nicht für jede Kombination einzeln etwas eintragen. Die Bedingung steht danach als Satz im Fenster und in der Liste. Sie gilt nicht für Termine, die für alle gelten.
+
+  ![Automatisch mit belegt unter einer Bedingung](bilder/06b-bedingung.png)
 - **Gebuchte Module** – daraus ergibt sich, wie viel Unterricht der Person zusteht.
 - **Sprache des gedruckten Plans** – **English** für Teilnehmende, die kein Deutsch sprechen (siehe [Abschnitt 9](#9-schritt-5-drucken--auch-auf-englisch)). In der Liste steht dann ein kleines „EN“ hinter dem Namen.
 - **Nicht verfügbar** – z. B. spätere Anreise oder früher abreisen. Wird die Person in dieser Zeit eingeplant, meldet MasterClass das.
@@ -304,7 +308,7 @@ Hat der Termin eine Unterrichtsart? Entweder im Termin wählen oder unter „Mod
 Im Termin unter „Unterrichtsart“ steht, was die Regeln ergeben. Trifft eine weiter oben stehende Regel zu, gewinnt sie – Reihenfolge unter „Module“ ändern oder die Regel genauer fassen. Für einen einzelnen Termin genügt eine Ausnahme (feste Unterrichtsart im Termin).
 
 **Eine Person wird im Ensemble-Termin nicht als belegt erkannt.**
-Ist sie beim Ensemble unter „Immer mit dabei“ (bzw. bei der Person unter „Automatisch dabei bei“) eingetragen?
+Ist sie beim Ensemble unter „Belegt automatisch mit“ (bzw. bei der Person unter „Wird automatisch mit belegt von“) eingetragen? Im Termin-Fenster steht unter „Automatisch dabei“, wer über eine Verknüpfung oder Bedingung mit belegt ist.
 
 **Begleitpersonen wurden mit importiert.**
 Beim Import „Nur bestimmte Zeilen übernehmen“ setzen, z. B. Spalte „Teilnahme als“, nur „Schüler*in“ ankreuzen. Bereits importierte Begleitpersonen unter „Personen & Räume“ löschen.
