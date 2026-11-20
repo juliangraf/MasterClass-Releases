@@ -6,7 +6,7 @@ Alle Bilder zeigen das mitgelieferte Beispielprojekt mit erfundenen Namen.
 **Inhalt**
 
 1. [Installation und Updates](#1-installation-und-updates)
-2. [Ein Projekt anlegen](#2-ein-projekt-anlegen)
+2. [Projekte anlegen, öffnen und wechseln](#2-projekte-anlegen-öffnen-und-wechseln)
 3. [Die Oberfläche](#3-die-oberfläche)
 4. [Schritt 1: Module und Unterrichtsarten](#4-schritt-1-module-und-unterrichtsarten)
 5. [Schritt 2: Personen, Räume und Ensembles](#5-schritt-2-personen-räume-und-ensembles)
@@ -14,7 +14,7 @@ Alle Bilder zeigen das mitgelieferte Beispielprojekt mit erfundenen Namen.
 7. [Schritt 3: Planen](#7-schritt-3-planen)
 8. [Schritt 4: Prüfen](#8-schritt-4-prüfen)
 9. [Schritt 5: Drucken – auch auf Englisch](#9-schritt-5-drucken--auch-auf-englisch)
-10. [Einstellungen: Zeitraum, Logo, Farben](#10-einstellungen-zeitraum-logo-farben)
+10. [Einstellungen: Programm und Projekt](#10-einstellungen-programm-und-projekt)
 11. [Zu mehreren an einem Plan arbeiten](#11-zu-mehreren-an-einem-plan-arbeiten)
 12. [Sichern, Rückgängig, Daten aus MasterClass 1](#12-sichern-rückgängig-daten-aus-masterclass-1)
 13. [Häufige Fragen](#13-häufige-fragen)
@@ -27,24 +27,57 @@ Alle Bilder zeigen das mitgelieferte Beispielprojekt mit erfundenen Namen.
 2. Die Datei öffnen. Zeigt Windows „Der Computer wurde durch Windows geschützt“, auf **„Weitere Informationen“** und dann **„Trotzdem ausführen“** klicken. (Das Programm ist nicht signiert; die Warnung ist normal.)
 3. Installationsordner bestätigen – Administratorrechte sind nicht nötig. Auf dem Desktop erscheint ein Symbol „MasterClass“.
 
-**Updates:** MasterClass prüft bei jedem Start mit Internetverbindung, ob es eine neue Version gibt, lädt sie im Hintergrund und installiert sie beim nächsten Schließen. Sie müssen nichts tun.
+**Updates:** MasterClass prüft bei jedem Start mit Internetverbindung (und danach alle paar Stunden), ob es eine neue Version gibt, lädt sie im Hintergrund und installiert sie beim nächsten Schließen. Sie müssen nichts tun. Ist ein Update bereit, erscheint ein Hinweis und ein Punkt am Zahnrad oben rechts; in den [Programmeinstellungen](#programmeinstellungen-zahnrad) können Sie es auch sofort installieren.
 
 **Ohne Installation:** Die Datei `MasterClass-x.y.z-portable.exe` läuft ohne Installation, z. B. vom USB-Stick. Sie aktualisiert sich aber nicht selbst – laden Sie neue Versionen dann von Hand herunter.
 
 **Ältere Versionen** bleiben auf der [Releases-Seite](https://github.com/juliangraf/MasterClass-Releases/releases) erhalten, falls Sie einmal zurück möchten.
 
-## 2. Ein Projekt anlegen
+## 2. Projekte anlegen, öffnen und wechseln
+
+Jede Veranstaltung ist ein eigenes **Projekt** und liegt in einer eigenen Datei (`.masterclass`), z. B. „Basscamp 2026.masterclass“ und „Basscamp 2027.masterclass“. In der Datei steckt alles: Personen, Termine, Module, Regeln, Gestaltung der Pläne. MasterClass zeigt immer genau ein Projekt an.
+
+### Der Startbildschirm
 
 ![Startbildschirm](bilder/01-start.png)
 
-Beim Start haben Sie vier Möglichkeiten:
+Ist kein Projekt geöffnet, sehen Sie den Startbildschirm:
 
-- **Neues Projekt** – legt eine neue Veranstaltung an. Sie wählen, wo die Projektdatei (`.masterclass`) gespeichert wird. Tipp: in einem Cloud-Ordner, wenn mehrere Personen planen (siehe [Abschnitt 11](#11-zu-mehreren-an-einem-plan-arbeiten)).
-- **Projekt öffnen** – eine vorhandene `.masterclass`-Datei öffnen. Ein Doppelklick auf die Datei im Explorer geht auch.
-- **Aus MasterClass 1 übernehmen** – die alte Datenbank `db.sqlite3` einlesen.
+- **Neues Projekt** – legt eine neue Veranstaltung an (siehe unten).
+- **Projekt öffnen** – eine vorhandene `.masterclass`-Datei auswählen. Ein Doppelklick auf die Datei im Explorer geht auch.
+- **Aus MasterClass 1 übernehmen** – die alte Datenbank `db.sqlite3` einlesen (siehe [Abschnitt 12](#12-sichern-rückgängig-daten-aus-masterclass-1)).
 - **Beispiel ausprobieren** – ein fertiges Beispielprojekt zum Kennenlernen. Hier können Sie alles gefahrlos ausprobieren.
+- **Zuletzt geöffnet** – die letzten zehn Projekte mit Speicherort. Ein Klick öffnet das Projekt. Dateien, die es nicht mehr gibt (gelöscht oder verschoben), verschwinden von selbst aus der Liste.
+- Das **Zahnrad** oben rechts öffnet die [Programmeinstellungen](#programmeinstellungen-zahnrad).
 
-Ein neues Projekt enthält schon sinnvolle Vorgaben: die Kategorien Teilnehmende, Dozenten, Räume und Ensembles sowie die Unterrichtsarten Einzelunterricht, Gruppenunterricht und Korrepetition. Alles lässt sich ändern.
+### Ein neues Projekt anlegen
+
+![Neues Projekt](bilder/01b-neues-projekt.png)
+
+1. Auf dem Startbildschirm **„Neues Projekt“** wählen. (Ist gerade ein Projekt offen: Projektname oben → „Projekt schließen“.)
+2. **Name der Veranstaltung** eingeben, z. B. „Basscamp 2027“, sowie **erster und letzter Tag**. Beides lässt sich später in den [Projekteinstellungen](#projekteinstellungen) ändern.
+3. **„Weiter“** – Windows fragt nun, **wo die Projektdatei gespeichert** werden soll. Vorgeschlagen ist der Name der Veranstaltung. Planen mehrere Personen mit, wählen Sie einen gemeinsamen Cloud-Ordner (OneDrive, Dropbox, Nextcloud, Google Drive – siehe [Abschnitt 11](#11-zu-mehreren-an-einem-plan-arbeiten)).
+4. **„Speichern“** – das Projekt ist sofort offen, Sie landen auf der Übersicht. Ab jetzt speichert MasterClass jede Änderung automatisch in diese Datei.
+
+Ein neues Projekt enthält schon sinnvolle Vorgaben: die Kategorien Teilnehmende, Dozenten, Räume und Ensembles sowie die Unterrichtsarten Einzelunterricht, Gruppenunterricht und Korrepetition. Alles lässt sich ändern. Weiter geht es mit den [Modulen](#4-schritt-1-module-und-unterrichtsarten) und den [Personen](#5-schritt-2-personen-räume-und-ensembles) – die Checkliste „So geht’s“ auf der Übersicht zeigt die Reihenfolge.
+
+### Mit mehreren Projekten arbeiten
+
+![Projektmenü](bilder/02b-projektmenue.png)
+
+Oben links steht der Name des offenen Projekts. Ein Klick darauf öffnet das **Projektmenü**; ganz oben steht, wo die Datei liegt.
+
+- **Projekt wechseln:** **„Projekt schließen“** – MasterClass speichert und zeigt den Startbildschirm. Dort unter „Zuletzt geöffnet“ das andere Projekt anklicken oder „Projekt öffnen“ wählen.
+  Schneller geht es mit einem Doppelklick auf eine andere `.masterclass`-Datei im Explorer: MasterClass speichert das offene Projekt und wechselt direkt. Es öffnet sich kein zweites Fenster.
+- **Jetzt speichern (Strg+S)** – speichert sofort. Nötig ist das nicht, MasterClass speichert ohnehin automatisch; oben rechts steht „Gespeichert“.
+- **Speichern unter …** – speichert eine **Kopie** unter neuem Namen oder an einem anderen Ort und arbeitet **mit der Kopie** weiter. Die alte Datei bleibt, wie sie war. Praktisch, um aus der Veranstaltung des Vorjahrs die nächste zu machen: „Speichern unter …“ → z. B. „Basscamp 2027“ → in den [Projekteinstellungen](#projekteinstellungen) Name und Tage ändern. Module, Regeln, Räume und Gestaltung bleiben erhalten; auch Personen und Termine werden mitkopiert – was Sie nicht mehr brauchen, löschen Sie danach.
+- **Teilnehmerliste importieren (Excel)** – siehe [Abschnitt 6](#6-anmeldeliste-aus-excel-importieren).
+- **Sicherungskopien anzeigen** – öffnet den Ordner mit den automatischen Sicherungen (je Projekt ein Unterordner, siehe [Abschnitt 12](#12-sichern-rückgängig-daten-aus-masterclass-1)).
+
+**Gut zu wissen:**
+
+- Eine Projektdatei können Sie im Explorer umbenennen, verschieben oder kopieren, solange sie in MasterClass nicht geöffnet ist. Danach einfach über „Projekt öffnen“ neu auswählen.
+- Die [Programmeinstellungen](#programmeinstellungen-zahnrad) (z. B. dunkle Darstellung) gelten für alle Projekte. Alles andere gehört zum jeweiligen Projekt.
 
 ## 3. Die Oberfläche
 
@@ -60,11 +93,11 @@ Ein neues Projekt enthält schon sinnvolle Vorgaben: die Kategorien Teilnehmende
 | 3. | **Planen** | Termine anlegen und verschieben |
 | 4. | **Prüfen** | Überschneidungen und offene Ansprüche |
 | 5. | **Drucken** | Pläne für alle, auf Deutsch oder Englisch |
-| | **Einstellungen** | Zeitraum der Veranstaltung, Logo, Farben, Sponsoren |
+| | **Projekteinstellungen** | Name und Tage der Veranstaltung, Logo, Farben, Sponsoren |
 
 Zahlen an „Prüfen“ zeigen Überschneidungen (rot) oder offene Ansprüche (orange); an „Drucken“ die Pläne, die sich seit dem letzten Druck geändert haben.
 
-**Oben** stehen der Projektname (Klick darauf: Speichern unter, Excel-Import, Sicherungskopien, Projekt schließen), der Speicherstatus („Gespeichert“) und die Pfeile für Rückgängig/Wiederholen.
+**Oben** stehen der Projektname (Klick darauf öffnet das [Projektmenü](#mit-mehreren-projekten-arbeiten): Speichern unter, Excel-Import, Sicherungskopien, Projekt schließen), der Speicherstatus („Gespeichert“), die Pfeile für Rückgängig/Wiederholen und das Zahnrad für die [Programmeinstellungen](#programmeinstellungen-zahnrad).
 
 **Mehr Platz:** Mit dem Symbol ganz unten links (▯◂) klappen Sie die Navigation auf schmale Symbole zusammen. Auch die Namensliste im Planer und die Druckeinstellungen lassen sich einklappen. MasterClass merkt sich die Einstellung.
 
@@ -266,19 +299,33 @@ Wochentage, Datum und feste Texte werden automatisch übersetzt. **Ihre eigenen 
 - Die Zahl am Knopf zeigt, wie viele Texte noch weder Übersetzung noch Vorschlag haben. „Nur fehlende“ zeigt genau diese.
 - Namen von Personen, Räumen und Ensembles werden nie übersetzt.
 
-## 10. Einstellungen: Zeitraum, Logo, Farben
+## 10. Einstellungen: Programm und Projekt
 
-![Einstellungen](bilder/17-einstellungen.png)
+Es gibt zwei Arten von Einstellungen:
 
-- **Darstellung** (gilt nur auf diesem Computer):
-  - **Farbschema:** Hell, Dunkel oder Wie Windows. Schneller geht es mit dem Sonne/Mond-Knopf oben rechts.
-  - **Akzentfarbe** der Oberfläche.
-  - **Schriftgröße:** Normal, Groß oder Sehr groß – z. B. für kleine Laptop-Bildschirme.
-  - **Termine im Planer:** zarte oder kräftige Farben (kräftig ist z. B. auf dem Beamer besser zu unterscheiden).
+| | Wo? | Gilt für |
+|---|---|---|
+| **Programmeinstellungen** | Zahnrad oben rechts (auch auf dem Startbildschirm) | diesen Computer, alle Projekte |
+| **Projekteinstellungen** | links in der Navigation | nur dieses Projekt – wird in der Projektdatei gespeichert und gilt damit für alle, die mitplanen |
 
-  Gedruckte Pläne und die Druckvorschau bleiben immer hell.
-- **Veranstaltung:** Name, erster und letzter Tag, sichtbarer Zeitraum im Planer (z. B. 8–22 Uhr), Raster beim Verschieben (z. B. 15 Minuten).
-- **Gestaltung der Pläne:** Logo oben, Überschrift, Akzentfarbe, Bild unten (z. B. Sponsoren) mit Text darüber.
+### Programmeinstellungen (Zahnrad)
+
+![Programmeinstellungen](bilder/19-programmeinstellungen.png)
+
+- **Farbschema:** Hell, Dunkel oder Wie Windows (folgt der Windows-Einstellung).
+- **Schriftgröße:** Normal, Groß oder Sehr groß – z. B. für kleine Laptop-Bildschirme oder den Beamer.
+- **Termine im Planer:** zarte oder kräftige Farben. Kräftige Farben unterscheiden die Unterrichtsarten deutlicher, z. B. am Beamer.
+- **Updates:** zeigt die installierte Version. **„Nach Updates suchen“** prüft sofort (sonst passiert das automatisch). Ist eine neue Version heruntergeladen, installiert **„Jetzt neu starten und installieren“** sie sofort – das Projekt wird vorher gespeichert. Ohne diesen Knopf wird sie beim nächsten Schließen installiert. Die portable Version aktualisiert sich nicht selbst.
+
+Gedruckte Pläne und die Druckvorschau bleiben immer hell – die Darstellung betrifft nur den Bildschirm.
+
+### Projekteinstellungen
+
+![Projekteinstellungen](bilder/17-einstellungen.png)
+
+- **Veranstaltung:** Name, erster und letzter Tag, sichtbarer Zeitraum im Planer (z. B. 8–21 Uhr) und das Raster beim Verschieben (5, 15 oder 30 Minuten).
+- **Gestaltung der gedruckten Pläne:** Überschrift auf jedem Plan (Standard: Name der Veranstaltung), Farbe der Überschriften, Logo oben, Bild unten (z. B. Sponsoren) mit Text darüber. Bilder werden beim Einfügen verkleinert, damit die Projektdatei klein bleibt.
+- **Projektdatei:** wo die Datei liegt, und **„Sicherungskopien öffnen“**.
 
 ## 11. Zu mehreren an einem Plan arbeiten
 
@@ -293,7 +340,7 @@ Legen Sie die Projektdatei in einen gemeinsamen Cloud-Ordner (OneDrive, Dropbox,
 
 - **Rückgängig / Wiederholen:** Strg+Z / Strg+Y oder die Pfeile oben rechts.
 - **Speichern:** passiert automatisch; Strg+S speichert sofort.
-- **Sicherungskopien:** MasterClass legt automatisch Sicherungen an. Projektname oben → „Sicherungskopien anzeigen“.
+- **Sicherungskopien:** MasterClass legt automatisch Sicherungen an. Projektname oben → „Sicherungskopien anzeigen“ (oder Projekteinstellungen → „Sicherungskopien öffnen“). Beim Speichern entsteht höchstens alle 5 Minuten eine Sicherung; je Projekt bleiben die letzten 40 erhalten, mit Datum und Uhrzeit im Dateinamen. **Zurückholen:** die gewünschte Sicherung im Explorer an einen eigenen Ort kopieren (z. B. neben die Projektdatei) und dort über „Projekt öffnen“ öffnen.
 - **MasterClass 1:** Startbildschirm → „Aus MasterClass 1 übernehmen“ → die alte `db.sqlite3` wählen (lag meist im Benutzerordner unter `Masterclass`). Die alte Datei wird nicht verändert.
 
 ## 13. Häufige Fragen
