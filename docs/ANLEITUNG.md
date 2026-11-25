@@ -87,7 +87,7 @@ Oben links steht der Name des offenen Projekts. Ein Klick darauf öffnet das **P
 
 | | Seite | Wofür |
 |---|---|---|
-| | **Übersicht** | Zahlen auf einen Blick, nächste Termine, Checkliste „So geht’s“ |
+| | **Übersicht** | Zahlen auf einen Blick, offene Punkte, nächste Termine, Checkliste „So geht’s“ |
 | 1. | **Module** | Was beinhaltet welches Modul? Regeln für die automatische Zuordnung |
 | 2. | **Personen & Räume** | Teilnehmende, Dozenten, Räume, Ensembles erfassen oder importieren |
 | 3. | **Planen** | Termine anlegen und verschieben |
@@ -98,6 +98,10 @@ Oben links steht der Name des offenen Projekts. Ein Klick darauf öffnet das **P
 Zahlen an „Prüfen“ zeigen Überschneidungen (rot) oder offene Ansprüche (orange); an „Drucken“ die Pläne, die sich seit dem letzten Druck geändert haben.
 
 **Oben** stehen der Projektname (Klick darauf öffnet das [Projektmenü](#mit-mehreren-projekten-arbeiten): Speichern unter, Excel-Import, Sicherungskopien, Projekt schließen), der Speicherstatus („Gespeichert“), die Pfeile für Rückgängig/Wiederholen und das Zahnrad für die [Programmeinstellungen](#programmeinstellungen-zahnrad).
+
+**Übersicht:** Die Karte **„Offene Punkte“** listet die wichtigsten Überschneidungen und fehlenden Ansprüche als Satz; ein Klick springt in den Planer. Die Checkliste „So geht’s“ zeigt bei jedem Schritt den Stand, z. B. „1 Überschneidung, 1 Anspruch offen“.
+
+**Mit der Tastatur:** In allen Fenstern speichert **Enter**, **Esc** bricht ab (in einer Notiz macht Enter eine neue Zeile, **Strg+Enter** speichert). **Tab** springt durch Felder, Knöpfe, Termine und Namen. Im Planer wechseln **← / →** den Tag, **N** legt einen neuen Termin an; auf einem Termin öffnet **Enter** ihn, **Entf** löscht ihn (mit Rückfrage). Dazu Strg+Z / Strg+Y / Strg+S wie gewohnt.
 
 **Mehr Platz:** Mit dem Symbol ganz unten links (▯◂) klappen Sie die Navigation auf schmale Symbole zusammen. Auch die Namensliste im Planer und die Druckeinstellungen lassen sich einklappen. MasterClass merkt sich die Einstellung.
 
@@ -125,13 +129,14 @@ Damit ein Termin für die Module zählt, braucht er eine Unterrichtsart. Statt s
 
 ![Regel bearbeiten](bilder/04-regel.png)
 
-Eine Regel besteht aus Bedingungen. Es gibt drei Arten:
+Eine Regel besteht aus Bedingungen. Links wählen Sie die Art:
 
-- **„Dabei ist …“**: einer der ausgewählten Einträge ist beim Termin dabei, z. B. die Korrepetitorin oder einer von zwei Professoren.
-- **„Nicht dabei ist …“**: keiner der ausgewählten Einträge ist dabei.
-- **„Anzahl“**: so viele Einträge einer Kategorie sind dabei, z. B. genau 1 Teilnehmer/in, ab 2 Teilnehmenden oder genau 1 Ensemble. Mitglieder zählen mit: ein Ensemble mit vier Personen sind vier Teilnehmende; das Bassorchester aus zwei Ensembles sind drei Ensembles.
+- **„Dabei ist (mind. einer)“** – einer der ausgewählten Einträge ist dabei, z. B. Prof. A *oder* Prof. B.
+- **„Dabei sind (alle)“** – alle ausgewählten sind dabei, z. B. ein Duo: Anna *und* Ben.
+- **„Nicht dabei ist“** – keiner der ausgewählten ist dabei.
+- **„Anzahl“** – *genau*, *mindestens*, *höchstens* oder *zwischen* so vielen Einträgen einer Kategorie, z. B. „genau 1 Teilnehmende“ oder „mindestens 2 Teilnehmende“. Mitglieder zählen mit: ein Ensemble mit vier Personen sind vier Teilnehmende.
 
-Oben wählen Sie, wie die Bedingungen verknüpft sind: **„Alle davon (und)“** oder **„Mindestens eine davon (oder)“**. Über **„Bedingung hinzufügen“ → „Gruppe …“** setzen Sie eine Gruppe in die Regel, die selbst wieder „und“ oder „oder“ sein kann – so lässt sich alles beliebig kombinieren. Unter den Bedingungen steht die Regel noch einmal als Satz, z. B. „Automatisch „Bassix“, wenn Bassics und Karola Piel dabei sind.“
+Mit **„+ Bedingung“** kommt eine weitere dazu. Erst dann erscheint oben die Wahl **„Alle treffen zu (und)“** oder **„Eine genügt (oder)“**. Für Kombinationen wie „(A oder B) und genau 1 Teilnehmer/in“ gibt es **„+ Gruppe“**. Unter den Bedingungen steht die Regel noch einmal als Satz.
 
 Beispiele für eine typische Einrichtung (so ist auch das Beispielprojekt eingerichtet):
 
@@ -177,28 +182,38 @@ Haben Termine von Hand genau die Unterrichtsart, die sich auch aus den Regeln er
 
 ![Personen und Räume](bilder/05-personen.png)
 
-Links wählen Sie die **Kategorie** (Teilnehmende, Dozenten, Räume, Ensembles …), rechts sehen Sie die Einträge.
+Oben wählen Sie die **Kategorie** (Teilnehmende, Dozenten, Räume, Ensembles …), darunter stehen die Einträge. In der Spalte **„Verknüpfungen“** sehen Sie, wer zu wem gehört, z. B. „ist Mitglied in: Ensemble Kitkat“.
 
 - **Schnell hinzufügen:** Namen ins Feld tippen und Enter drücken.
 - **Bearbeiten:** Doppelklick auf eine Zeile oder das Stift-Symbol.
-- **Weitere Kategorien** (z. B. Instrumente, Korrepetitoren): „Kategorie hinzufügen“. Alles, was nicht gleichzeitig an zwei Orten sein kann, ist eine Kategorie.
-- **Kategorie bearbeiten** (Menü „…“): Name in Einzahl und Mehrzahl, Farbe, Reihenfolge, Zusammenführen mit einer anderen Kategorie.
+- **Weitere Kategorien** (z. B. Instrumente): das **+** neben den Kategorien. Alles, was nicht gleichzeitig an zwei Orten sein kann, ist eine Kategorie.
+- **Kategorie bearbeiten** (Menü „…“): Name in Einzahl und Mehrzahl, Farbe, Namen der Verknüpfungen (siehe unten), Reihenfolge, Zusammenführen.
 
 ![Eintrag bearbeiten](bilder/06-person-dialog.png)
 
 Im Bearbeiten-Fenster:
 
-- **Automatisch mit belegt** – hier legen Sie fest, wer mit wem automatisch zusammen eingeplant ist. Das ist *eine* Verknüpfung, die Sie von beiden Seiten aus eintragen können; die Pfeile zeigen die Richtung:
-  - **→ Belegt automatisch mit** – wird *dieser* Eintrag eingeplant, sind die ausgewählten automatisch mit belegt. Beispiele: die Mitglieder eines Ensembles; der feste Raum einer Dozentin.
-  - **← Wird automatisch mit belegt von** – die Gegenrichtung: wird *einer der ausgewählten* eingeplant, ist dieser Eintrag automatisch mit belegt. Beispiele: die Ensembles, in denen eine Person spielt; bei einem Raum die Dozentin, deren fester Raum er ist.
-
-  Beides ist dasselbe, nur von der anderen Seite gesehen: Tragen Sie beim Ensemble unter „Belegt automatisch mit“ Lisa ein, steht bei Lisa das Ensemble unter „Wird automatisch mit belegt von“. Plant man also das „Ensemble Toffifee“ ein, sind alle Mitglieder automatisch belegt – und eine Überschneidung mit dem Einzelunterricht eines Mitglieds wird erkannt. Die Bezeichnungen können Sie je Kategorie ändern (z. B. „Mitglieder“ statt „Belegt automatisch mit“).
-  - **… oder unter einer Bedingung (und/oder)** – für Fälle, in denen ein einzelner Eintrag nicht genügt. Über **„Bedingung festlegen …“** öffnet sich derselbe Editor wie bei den [Regeln der Unterrichtsarten](#regeln-termine-automatisch-zuordnen). Beispiele: Der Pianoraum ist nur dann automatisch belegt, wenn Ensemble A **und** Dozentin B beide eingeplant sind; die Korrepetitorin kommt automatisch dazu, wenn mindestens 5 Teilnehmende dabei sind. So müssen Sie nicht für jede Kombination einzeln etwas eintragen. Die Bedingung steht danach als Satz im Fenster und in der Liste. Sie gilt nicht für Termine, die für alle gelten.
-
-  ![Automatisch mit belegt unter einer Bedingung](bilder/06b-bedingung.png)
+- **Wird automatisch mit eingeplant** – wer automatisch dabei ist, wenn *dieser* Eintrag eingeplant wird. Beim Ensemble sind das die **Mitglieder** und die **Leitung**, bei einer Dozentin ihr **Raum**. Plant man das „Ensemble Kitkat“ ein, sind alle Mitglieder, Prof. Hofmann und sein Raum belegt – eine Überschneidung mit dem Einzelunterricht eines Mitglieds wird sofort erkannt.
+  Die Felder sind nach Kategorie getrennt und heißen so, wie es in der Kategorie festgelegt ist. Fehlt ein Feld, hilft **„Weitere Kategorie verknüpfen“**.
+  Eingetragen wird immer beim Eintrag, der die anderen mitbringt (beim Ensemble, nicht bei der Teilnehmerin). Die Gegenrichtung steht zur Information darunter, z. B. bei Lisa „ist Mitglied in: Ensemble Kitkat“.
 - **Gebuchte Module** – daraus ergibt sich, wie viel Unterricht der Person zusteht.
 - **Sprache des gedruckten Plans** – **English** für Teilnehmende, die kein Deutsch sprechen (siehe [Abschnitt 9](#9-schritt-5-drucken--auch-auf-englisch)). In der Liste steht dann ein kleines „EN“ hinter dem Namen.
 - **Nicht verfügbar** – z. B. spätere Anreise oder früher abreisen, mit Grund. Im Planer ist diese Zeit [schraffiert](#7-schritt-3-planen); wird die Person trotzdem eingeplant, meldet MasterClass das.
+
+### Verknüpfungen benennen
+
+![Kategorie bearbeiten: Verknüpfungen benennen](bilder/06b-verknuepfungen.png)
+
+Wie eine Verknüpfung heißt, legen Sie je Kategorie-Paar fest (Menü „…“ → „Kategorie bearbeiten“): einmal, wie sie beim Eintrag selbst heißt, und einmal beim anderen. Neue Projekte haben schon sinnvolle Namen:
+
+| Kategorie → verknüpft mit | heißt hier | heißt dort |
+|---|---|---|
+| Ensemble → Teilnehmende | Mitglieder | ist Mitglied in |
+| Ensemble → Dozenten | Leitung | leitet |
+| Ensemble → Ensembles | besteht aus | gehört zu |
+| Dozent/in → Räume | belegt | belegt von |
+
+Die Namen erscheinen im Bearbeiten-Fenster, in der Liste und im Kopf der gedruckten Pläne (z. B. „ist Mitglied in: Ensemble Kitkat“). Leer gelassen heißt es „Belegt automatisch mit“.
 
 ## 6. Anmeldeliste aus Excel importieren
 
@@ -247,9 +262,11 @@ Oben wählen Sie den **Tag** und, was die **Spalten** sein sollen – meist Doze
 
 ![Termin bearbeiten](bilder/10-termin.png)
 
-Im Termin-Fenster sehen Sie sofort, ob es Überschneidungen gibt, und wer **automatisch dabei** ist (z. B. die Mitglieder eines Ensembles, der feste Raum der Dozentin). „Gilt für alle“ lässt den Termin in jedem Plan erscheinen; „In dieser Zeit keine anderen Termine“ macht ihn blockierend (z. B. Mittagessen). Die Notiz erscheint im gedruckten Plan.
+Im Termin-Fenster sehen Sie sofort, ob es Überschneidungen gibt, und wer **automatisch dabei** ist (z. B. die Mitglieder eines Ensembles, der Raum der Dozentin). „Gilt für alle“ lässt den Termin in jedem Plan erscheinen; „In dieser Zeit keine anderen Termine“ macht ihn blockierend (z. B. Mittagessen). Die **Notiz** darf mehrere Zeilen haben (Enter = neue Zeile, Strg+Enter = speichern) und erscheint so auch im Planer und im gedruckten Plan.
 
-**Rote Termine** überschneiden sich mit einem anderen. Die rote Zahl im Spaltenkopf zeigt, wie viele es in dieser Spalte sind.
+**„Direkt danach nochmal“** speichert Ihre Änderungen am Termin und legt eine Kopie direkt im Anschluss an – beide haben danach denselben Stand (z. B. denselben neuen Titel).
+
+**Rote Termine** überschneiden sich mit einem anderen (Rot ist für Unterrichtsarten deshalb nicht vorgesehen). Eine [ignorierte](#8-schritt-4-prüfen) Überschneidung hat einen gestrichelten grauen Rand. Die rote Zahl im Spaltenkopf zeigt, wie viele es in dieser Spalte sind.
 
 **Spalte „Für alle“:** Ganz links stehen die Termine, die für alle gelten (Mahlzeiten, Begrüßung, Konzert). In den anderen Spalten sind sie als grün gestreiftes Band zu sehen. Brauchen Sie den Platz, blenden Sie die Spalte mit dem durchgestrichenen Auge im Spaltenkopf aus. Dann stehen Uhrzeit und Titel dieser Termine direkt in den Bändern der anderen Spalten; ein Klick darauf öffnet den Termin. Der grüne Knopf mit der Weltkugel oben links in der Ecke blendet die Spalte wieder ein. MasterClass merkt sich die Einstellung. Neue Termine für alle legen Sie weiterhin mit **„Termin für alle“** an.
 
@@ -276,10 +293,13 @@ Im Termin-Fenster sehen Sie sofort, ob es Überschneidungen gibt, und wer **auto
 
 Hier sehen Sie alles, was noch nicht stimmt:
 
-- **Überschneidungen** – wer ist wann doppelt verplant, in welchen Terminen? Ein Klick springt zum Termin im Planer.
-- **Termine für alle** – Einzeltermine, die in einer blockierenden Zeit (Mahlzeit) liegen.
-- **Abwesenheiten** – jemand ist eingeplant, obwohl als nicht verfügbar eingetragen.
-- **Ansprüche** – pro Person: Was ist laut Modul vorgesehen, was ist geplant, was fehlt? Als Excel-Datei exportierbar.
+- **Überschneidungen** – wer ist wann doppelt verplant, in welchen Terminen? Auch Termine in einer blockierenden Zeit (Mahlzeit) und Einplanungen während einer Abwesenheit. „Im Plan“ springt zum Termin, „1“ / „2“ öffnen die beteiligten Termine.
+- **Ansprüche** – pro Person: Was ist laut Modul vorgesehen, was ist geplant, was fehlt? Bei **„Nur Abweichungen“** stehen nur die Personen und Unterrichtsarten, die nicht stimmen. Als Excel-Datei exportierbar.
+
+![Ansprüche](bilder/11b-ansprueche.png)
+
+**Ignorieren:** Manches ist Absicht – z. B. zwei Termine, die sich laut Absprache um zehn Minuten überschneiden, oder eine Person, die bewusst eine Stunde weniger bekommt. Dann **„Ignorieren“** klicken. Das Problem bleibt sichtbar (grau, mit „ignoriert“), zählt aber nicht mehr als offen: keine rote Zahl an „Prüfen“, nicht in der Übersicht. „Wieder prüfen“ nimmt es zurück, „Ignorierte anzeigen“ blendet sie aus.
+Ändert sich später etwas daran (Termin verschoben, andere Person dabei, andere Minuten), ist es ein neues Problem und erscheint wieder als offen – so geht keine neue Doppelbelegung unter.
 
 ## 9. Schritt 5: Drucken – auch auf Englisch
 
@@ -287,8 +307,13 @@ Hier sehen Sie alles, was noch nicht stimmt:
 
 1. **Wessen Pläne?** – z. B. „Alle Teilnehmende“, „Alle Dozenten“ oder einzelne Personen auswählen.
 2. **Sprache** – siehe unten.
-3. **Einstellungen** – nur ein Tag, Termine für alle ein-/ausblenden, zweispaltig (spart Papier), Zugehörigkeit und Modul im Kopf. Darunter legen Sie fest, welche Namen in den Plänen erscheinen (z. B. in Teilnehmer-Plänen nicht alle anderen Teilnehmenden, der Ensemble-Name reicht).
-4. **Drucken** oder **Als PDF speichern**.
+3. **Aussehen** – **„Liste je Tag“** (alle Termine untereinander) oder **„Stundenplan“** (wie in der Schule: Tage als Spalten, Uhrzeit nach unten, eine Seite pro Plan). Dazu das **Papier**: A4 hoch oder quer, A5, A3 quer, Letter. MasterClass merkt sich die Wahl.
+4. **Einstellungen** – nur ein Tag, Termine für alle ein-/ausblenden, schwarz-weiß, Zugehörigkeit und Modul im Kopf. Darunter legen Sie fest, welche Namen in den Plänen erscheinen (z. B. in Teilnehmer-Plänen nicht alle anderen Teilnehmenden, der Ensemble-Name reicht).
+5. **Drucken** oder **Als PDF speichern**.
+
+**Seiten:** MasterClass teilt die Pläne selbst auf Seiten des gewählten Formats auf – die Vorschau zeigt genau, was gedruckt wird. Ein Tag bleibt zusammen, wenn er auf die Seite passt; sonst beginnt er auf der nächsten. Nur ein Tag, der länger als eine ganze Seite ist, wird geteilt („Fortsetzung“). Folgeseiten haben oben den Namen, jede Seite unten Sponsorenbild, Druckdatum und „Seite 1 von 2“. Im Druckfenster von Windows deshalb das gleiche Papierformat wählen und Ränder auf „Keine“ bzw. „Standard“ lassen.
+
+![Stundenplan](bilder/12b-stundenplan.png)
 
 Nach dem Drucken merkt sich MasterClass den Stand. Ändert sich später ein Plan, erscheint er hier als „geändert“ – mit **„Nur geänderte auswählen“** drucken Sie beim Umplanen nur die betroffenen Pläne neu.
 
@@ -366,7 +391,13 @@ Hat der Termin eine Unterrichtsart? Entweder im Termin wählen oder unter „Mod
 Im Termin unter „Unterrichtsart“ steht, was die Regeln ergeben. Trifft eine weiter oben stehende Regel zu, gewinnt sie – Reihenfolge unter „Module“ ändern oder die Regel genauer fassen. Für einen einzelnen Termin genügt eine Ausnahme (feste Unterrichtsart im Termin).
 
 **Eine Person wird im Ensemble-Termin nicht als belegt erkannt.**
-Ist sie beim Ensemble unter „Belegt automatisch mit“ (bzw. bei der Person unter „Wird automatisch mit belegt von“) eingetragen? Im Termin-Fenster steht unter „Automatisch dabei“, wer über eine Verknüpfung oder Bedingung mit belegt ist.
+Ist sie beim Ensemble unter „Mitglieder“ eingetragen? Bei der Person steht dann in der Liste „ist Mitglied in: …“. Im Termin-Fenster steht unter „Automatisch dabei“, wer über eine Verknüpfung mit belegt ist.
+
+**Wo ist „automatisch mit belegt unter einer Bedingung“ geblieben?**
+Das gibt es seit Version 2.7 nicht mehr – es war zu kompliziert. Bedingungen aus älteren Versionen gelten weiter und stehen im Bearbeiten-Fenster mit einem Knopf „Entfernen“.
+
+**Eine Überschneidung ist Absicht.**
+Unter „Prüfen“ auf „Ignorieren“ klicken – siehe [Abschnitt 8](#8-schritt-4-prüfen).
 
 **Begleitpersonen wurden mit importiert.**
 Beim Import „Nur bestimmte Zeilen übernehmen“ setzen, z. B. Spalte „Teilnahme als“, nur „Schüler*in“ ankreuzen. Bereits importierte Begleitpersonen unter „Personen & Räume“ löschen.

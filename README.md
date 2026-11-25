@@ -23,13 +23,14 @@ Die Dateien mit `.blockmap` und `latest.yml` braucht nur das Programm für Updat
 ## Was kann MasterClass?
 
 - **Planen mit der Maus** – Termine im Wochenplan aufziehen, verschieben, in der Länge ändern; Namen aus der Liste in den Plan ziehen.
-- **Keine Doppelbuchungen** – Überschneidungen werden sofort rot markiert, auch über Ensembles und feste Räume hinweg, bei Mahlzeiten und bei Abwesenheiten (z. B. spätere Anreise).
+- **Keine Doppelbuchungen** – Überschneidungen werden sofort rot markiert, auch über Ensembles und feste Räume hinweg, bei Mahlzeiten und bei Abwesenheiten (z. B. spätere Anreise). Was Absicht ist, lässt sich ignorieren.
 - **Module & Ansprüche** – z. B. „Modul 3 = 45 min Einzel + 90 min Gruppe + 45 min Korrepetition“. MasterClass zeigt, wem noch etwas fehlt.
 - **Regeln** – Termine zählen automatisch als „Korrepetition“, wenn die Korrepetitorin dabei ist, als „Einzelunterricht“ bei genau einer Teilnehmerin, als „Gruppenunterricht“ ab zwei.
 - **Excel-Import** der Anmeldeliste (auch direkt aus Google- oder Microsoft-Formularen), ohne Begleitpersonen, ohne Duplikate.
-- **Drucken / PDF** – ein Plan pro Person, Dozent, Raum oder Ensemble, mit Logo, Farben und Sponsoren. MasterClass merkt sich, welche Pläne sich nach dem Druck geändert haben.
+- **Drucken / PDF** – ein Plan pro Person, Dozent, Raum oder Ensemble, als Liste oder als Stundenplan wie in der Schule, sauber auf DIN-A4-Seiten (oder A5, A3, Letter) aufgeteilt, mit Logo, Farben und Sponsoren. MasterClass merkt sich, welche Pläne sich nach dem Druck geändert haben.
 - **Pläne auf Englisch** – pro Person einstellbar, für Teilnehmende, die kein Deutsch sprechen.
 - **Gemeinsam arbeiten** – die Projektdatei kann in OneDrive, Dropbox, Nextcloud oder Google Drive liegen; Änderungen mehrerer Personen werden zusammengeführt. Funktioniert vollständig offline.
+- **Mit der Tastatur bedienbar** – Enter speichert, Esc bricht ab, Pfeiltasten wechseln im Planer den Tag.
 - Automatisches Speichern, Rückgängig/Wiederholen (Strg+Z / Strg+Y), automatische Sicherungskopien.
 
 ## 📖 Anleitung
